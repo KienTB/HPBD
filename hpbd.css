@@ -145,6 +145,10 @@
     display: none;
 }
 
+.showModal {
+    display: none;
+}
+
 @keyframes btnShow {
     from{
         top: -200px;

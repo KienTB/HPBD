@@ -3,7 +3,7 @@ var display = document.querySelector('.layout2')
 var btnClose = document.querySelector('.button-close')
 
 function toggleBtn(e) {
-    display.classList.toggle('hide')
+    display.classList.toggle('hide');
 }
 
 btnYes.addEventListener('click',toggleBtn)
@@ -14,19 +14,23 @@ display.addEventListener('click',function(e) {
     }
 })
 
-// var btnNo = document.querySelector('.button-no')
-// var modal = document.querySelector('.modal')
-// var iconClose = document.querySelector('.modal__header i')
-// var btnClose2 = document.querySelector('.button__footer')
+var btnNo = document.querySelector('.button-no');
+var modal = document.querySelector('.modal');
+var iconClose = document.querySelector('.modal__header i');
+var btnClose2 = document.querySelector('.button__footer');
 
-// btnNo.addEventListener('click',toggleBtn)
-// iconClose.addEventListener('click',toggleBtn)
-// btnClose2.addEventListener('click',toggleBtn)
-// modal.addEventListener('click',function(e){
-//     if(e.target == e.currentTarget) {
-//         toggleBtn()
-//     }
-// })
+function toggleModal() {
+    modal.classList.toggle('showModal');
+}
+
+btnNo.addEventListener('click',toggleModal); 
+iconClose.addEventListener('click',toggleModal); 
+btnClose2.addEventListener('click',toggleModal); 
+modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+        toggleModal(); 
+    }
+});
 
 
 
