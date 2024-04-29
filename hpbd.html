@@ -14,10 +14,13 @@
 </head>
 
 <body>
-    <img src="download.jpg" alt="Background Image"
-        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-        
-    <div class="layout1">
+    <div class="wallpaper">
+        <img src="download.jpg" alt="Background Image"
+            style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <button class="button__openSystem">OPEN</button>
+    </div>
+
+    <div class="layout1 hide1">
         <div class="centered-square">
             <div class="layout-item1">
                 <div class="layout-square">
@@ -39,8 +42,9 @@
                     style="color: #ff7e5f; padding:8px 10px;margin: 0; font-size: 35px; font-family: 'Gabriela', cursive;">
                     Who special day is today, Do u know?!</h1>
                 <div class="button-container">
-                    <button class="button-yes">YES</button>
                     <button class="button-no">NO</button>
+                    <button class="button-yes">YES</button>
+                    <button class="button-comeback">BACK</button>
                 </div>
                 <div class="modal showModal">
                     <div class="modal__inner">
@@ -74,11 +78,50 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
-            <div class="layout-item2">
-                <h1 style="color: #ff7e5f; font-family: 'Gabriela', cursive;font-size: 40px;"></h1>
-                <img style="width: 400x; height: 300px; display: flex; margin-right: 520px; margin-top: 20px;"
-                    src="download3.png" alt="image">
-                <button class="button-close">CLOSE</button>
+            <div style="display: flex; justify-content: space-between;" class="layout-item2">
+                <h1
+                    style="color: #ff7e5f; font-family: 'Gabriela', cursive;font-size: 40px;margin-left: 350px; width: 400px;margin-top: 25px;">
+                    Congratulations you, have chosen the correct answer. Please choose from left to right nahh!</h1>
+                <img style="height: 300px; display: flex; margin-right: 450px; margin-top: -300px" src="download3.png"
+                    alt="image">
+                <div class="button__info">
+                    <button class="button-wao">WAOO</button>
+                    <button class="button-note">NOTE</button>
+                    <button class="button-close">BACK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal1 show1Modal">
+        <div class="modal1__inner">
+            <div class="modal1__header">
+                <p>LOVE SONG FOR U</p>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal1__body">
+                <!-- <img style="width: 170px; height: 170px;" src="download4.png" alt="image"> -->
+                <p style="color: #ff7e5f; font-family: 'Gabriela', cursive; font-size: 20px;">Em ấn vô <a
+                        href="https://drive.google.com/drive/folders/1XuQC13qAv9OoJFL0vQuuedcqbi5EjYb6?usp=sharing"
+                        target="_blank">đây</a> xem nó hiện ra hông!</p>
+            </div>
+            <div class="modal1__footer">
+                <button class="button1__footer">BACK</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal2 show2Modal">
+        <div class="modal2__inner">
+            <div class="modal2__header">
+                <p>WISHES SENT TO U AS MAH LOVER&#x2764;</p>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal2__body">
+                <p style="color: #ff7e5f; font-family: 'Gabriela', cursive; font-size: 20px;"></p>
+            </div>
+            <div class="modal2__footer">
+                <button class="button2__footer">BACK</button>
             </div>
         </div>
     </div>
